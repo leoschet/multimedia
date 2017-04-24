@@ -1,0 +1,1179 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#"
+     xml:base="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ma-ont="http://www.w3.org/ns/ma-ont#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia">
+        <owl:imports rdf:resource="http://www.w3.org/ns/ma-ont"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:domain rdf:resource="_:genid103"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentOwner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commented">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>commentedAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#employedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#employedAt">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#employees"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#employees -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#employees"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#family -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#family">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#followers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#followers">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#follows"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#follows"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#friends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#friends">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#groupList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#groupList">
+        <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#hasComment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#hasComment">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#hasTag -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#hasTag">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#isTagOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#isTagOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#liked -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#liked">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#likedBy"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#likedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#likedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilePicture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilePicture">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#relationship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#relationship">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#sharedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#sharedBy">
+        <owl:inverseOf rdf:resource="http://xmlns.com/foaf/0.1/publications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#taggedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#taggedOn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#features -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#features">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#hasContributor -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#hasContributor">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#hasRelatedLocation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#hasRelatedLocation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#isCopyrightedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#isCopyrightedBy">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#isProvidedBy -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#isProvidedBy">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member">
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/publications -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/publications">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryTimer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryTimer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryImage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#commentText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#locationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#locationDescription">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaDescription">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaFormat">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaSize">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaTitle">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#mediaURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profile -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profile">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#tagId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#tagId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#tagText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#tagText">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#locationAltitude -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#locationAltitude">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#locationLatitude -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#locationLatitude">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#locationLongitude -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#locationLongitude">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#locationName -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#locationName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/msnChatID -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/msnChatID">
+        <rdfs:comment>Messenger chat id</rdfs:comment>
+        <rdfs:label>messengerId</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/nick -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/nick">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                            <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#File -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#File">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#Image"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryImage"/>
+        <rdfs:label>Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryImage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryImage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Tag"/>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Video">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ma-ont#MediaResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#Collection -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Collection">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#Location -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Location">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#MediaResource -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaResource">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#Rating -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Rating">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#comment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#comment1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Comment"/>
+        <commentOwner rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+        <commentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-04-19T15:20:45</commentDate>
+        <commentId rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1</commentId>
+        <commentText rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">What?</commentText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#flickrImage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#flickrImage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#StoryImage"/>
+        <likedBy rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+        <likedBy rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        <StoryTimer rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</StoryTimer>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Random picture...</mediaDescription>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">flickrImage</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.flickr.com/photos/library_of_congress/4733201712/meta/</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#loc_user1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#loc_user1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ma-ont#Location"/>
+        <ma-ont:locationAltitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.0</ma-ont:locationAltitude>
+        <ma-ont:locationLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">48.18596052</ma-ont:locationLatitude>
+        <ma-ont:locationLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.3397491</ma-ont:locationLongitude>
+        <ma-ont:locationName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Home</ma-ont:locationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <ma-ont:hasPublisher rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">png</mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user1</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"></mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user2</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">png</mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user3</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">png</mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user4</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">png</mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user5</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#PostImage"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</mediaDescription>
+        <mediaFormat rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">png</mediaFormat>
+        <mediaSize rdf:datatype="http://www.w3.org/2001/XMLSchema#double">640.0</mediaSize>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user6</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <commented rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument"/>
+        <family rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        <liked rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument"/>
+        <profilePicture rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user1"/>
+        <ma-ont:hasPublished rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#flickrImage"/>
+        <ma-ont:hasRelatedLocation rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#loc_user1"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">leoschet</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">21</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">06-22</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Leonardo</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schettini</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">leoschet</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        <liked rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#flickrImage"/>
+        <liked rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument"/>
+        <profilePicture rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user2"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">gio</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">59</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">09-28</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Giovanna</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schettini</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">gio</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        <profilePicture rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user3"/>
+        <ma-ont:hasPublished rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#youtubeVideo"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">zé</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">30</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">09-09</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">José</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Aldo</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">zé</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <friends rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        <liked rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#flickrImage"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">god</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">35</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">10-03</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Zlatan</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ibrahimovic</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">god</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <profilePicture rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user5"/>
+        <ma-ont:hasPublished rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ron</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">30</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">02-01</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ronda</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rousey</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ron</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <profilePicture rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#profilepic_user6"/>
+        <profile rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">god2</profile>
+        <foaf:age rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">77</foaf:age>
+        <foaf:birthday rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">03-10</foaf:birthday>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chuck</foaf:firstName>
+        <foaf:gender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</foaf:gender>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Norris</foaf:lastName>
+        <foaf:msnChatID rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">god2</foaf:msnChatID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#wikipediaDocument">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#File"/>
+        <likedBy rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+        <likedBy rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wow!</mediaDescription>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">wikipediaDocument</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://moodle.univie.ac.at/pluginfile.php/936914/mod_resource/content/1/Wikipedia-Franz-Kafka.txt</mediaURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#youtubeVideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#youtubeVideo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Video"/>
+        <mediaDescription rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Very funny!</mediaDescription>
+        <mediaTitle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">youtubeVideo</mediaTitle>
+        <mediaURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.youtube.com/watch?v=zpJ9r-BmvYY</mediaURL>
+        <ma-ont:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"></ma-ont:duration>
+        <ma-ont:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.06</ma-ont:duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Audio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#File"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#Video"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#Image"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/ma-ont#MediaFragment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#user6"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1406 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia">
+    <Prefix name="" IRI="http://www.semanticweb.org/leonardo/ontologies/2017/3/socialmedia#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="wot" IRI="http://xmlns.com/wot/0.1/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="ma-ont" IRI="http://www.w3.org/ns/ma-ont#"/>
+    <Import>http://www.w3.org/ns/ma-ont</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Declaration>
+        <Class IRI="#PostImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#follows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#profile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tagText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user4"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#employedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#friends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#groupList"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tagId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StoryTimer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commentText"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#taggedOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#commentOwner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#loc_user1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#youtubeVideo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#likedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoryImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relationship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#family"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#profilePicture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTagOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#liked"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commentId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mediaDescription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#commentDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comment1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#employees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#File"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#commented"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#flickrImage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user6"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profilepic_user2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#File"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostImage"/>
+        <Class abbreviatedIRI="ma-ont:Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StoryImage"/>
+        <Class abbreviatedIRI="ma-ont:Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Audio"/>
+        <Class IRI="#File"/>
+        <Class IRI="#Video"/>
+        <Class abbreviatedIRI="ma-ont:Image"/>
+        <Class abbreviatedIRI="ma-ont:MediaFragment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PostImage"/>
+        <Class IRI="#StoryImage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ma-ont:Collection"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ma-ont:Location"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="ma-ont:Rating"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="foaf:Group"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="foaf:Group"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Comment"/>
+        <NamedIndividual IRI="#comment1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#StoryImage"/>
+        <NamedIndividual IRI="#flickrImage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ma-ont:Location"/>
+        <NamedIndividual IRI="#loc_user1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostImage"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="#user6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#File"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Video"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user2"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user5"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#user3"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#user4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#user5"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#user6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#user4"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#user5"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#user6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user4"/>
+        <NamedIndividual IRI="#user5"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user4"/>
+        <NamedIndividual IRI="#user6"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#user5"/>
+        <NamedIndividual IRI="#user6"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#commentOwner"/>
+        <NamedIndividual IRI="#comment1"/>
+        <NamedIndividual IRI="#user1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likedBy"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <NamedIndividual IRI="#user2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likedBy"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <NamedIndividual IRI="#user4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasPublisher"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <NamedIndividual IRI="#user1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#commented"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#family"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#user5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liked"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#profilePicture"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasPublished"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#flickrImage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasRelatedLocation"/>
+        <NamedIndividual IRI="#user1"/>
+        <NamedIndividual IRI="#loc_user1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#user5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liked"/>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#flickrImage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liked"/>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#profilePicture"/>
+        <NamedIndividual IRI="#user2"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#user4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#profilePicture"/>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasPublished"/>
+        <NamedIndividual IRI="#user3"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#friends"/>
+        <NamedIndividual IRI="#user4"/>
+        <NamedIndividual IRI="#user6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#liked"/>
+        <NamedIndividual IRI="#user4"/>
+        <NamedIndividual IRI="#flickrImage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#profilePicture"/>
+        <NamedIndividual IRI="#user5"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasPublished"/>
+        <NamedIndividual IRI="#user5"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#profilePicture"/>
+        <NamedIndividual IRI="#user6"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likedBy"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+        <NamedIndividual IRI="#user1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likedBy"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+        <NamedIndividual IRI="#user2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#commentDate"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2017-04-19T15:20:45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#commentId"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#commentText"/>
+        <NamedIndividual IRI="#comment1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">What?</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StoryTimer"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Random picture...</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">flickrImage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#flickrImage"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://www.flickr.com/photos/library_of_congress/4733201712/meta/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:locationAltitude"/>
+        <NamedIndividual IRI="#loc_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">181.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:locationLatitude"/>
+        <NamedIndividual IRI="#loc_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">48.18596052</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:locationLongitude"/>
+        <NamedIndividual IRI="#loc_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">16.3397491</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:locationName"/>
+        <NamedIndividual IRI="#loc_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Home</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profile picture</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaFormat"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaSize"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">640.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">profilepic_user6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#profilepic_user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">leoschet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">06-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Leonardo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Schettini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user1"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">leoschet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">gio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">09-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Giovanna</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Schettini</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user2"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">gio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">zé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">09-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">José</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Aldo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user3"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">zé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">god</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">10-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Zlatan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ibrahimovic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user4"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">god</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">02-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ronda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Rousey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user5"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ron</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#profile"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">god2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">77</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:birthday"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">03-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:firstName"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Chuck</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:lastName"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Norris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="foaf:msnChatID"/>
+        <NamedIndividual IRI="#user6"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">god2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Wow!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">wikipediaDocument</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#wikipediaDocument"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://moodle.univie.ac.at/pluginfile.php/936914/mod_resource/content/1/Wikipedia-Franz-Kafka.txt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaDescription"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Very funny!</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaTitle"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">youtubeVideo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#mediaURL"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.youtube.com/watch?v=zpJ9r-BmvYY</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:duration"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal"></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="ma-ont:duration"/>
+        <NamedIndividual IRI="#youtubeVideo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">11.06</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#employedAt"/>
+        <ObjectProperty IRI="#employees"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#followers"/>
+        <ObjectProperty IRI="#follows"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#groupList"/>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#liked"/>
+        <ObjectProperty IRI="#likedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sharedBy"/>
+        <ObjectProperty abbreviatedIRI="foaf:publications"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#family"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#friends"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#relationship"/>
+    </SymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#family"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#friends"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#relationship"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#commentOwner"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#commented"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#employedAt"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#family"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followers"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#friends"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComment"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTag"/>
+        <ObjectUnionOf>
+            <Class IRI="#Comment"/>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTagOf"/>
+        <Class IRI="#Tag"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#liked"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#profilePicture"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relationship"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#taggedOn"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasRelatedLocation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="foaf:Agent"/>
+                <ObjectUnionOf>
+                    <Class abbreviatedIRI="foaf:Organization"/>
+                    <Class abbreviatedIRI="foaf:Person"/>
+                </ObjectUnionOf>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="foaf:publications"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#commentOwner"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#commented"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#employedAt"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#family"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followers"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#friends"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComment"/>
+        <Class IRI="#Comment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTag"/>
+        <Class IRI="#Tag"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTagOf"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#liked"/>
+        <ObjectUnionOf>
+            <Class IRI="#Comment"/>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#profilePicture"/>
+        <Class IRI="#PostImage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relationship"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#taggedOn"/>
+        <ObjectUnionOf>
+            <Class IRI="#Comment"/>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ma-ont:features"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasContributor"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ma-ont:isCopyrightedBy"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="ma-ont:isProvidedBy"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="foaf:publications"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="ma-ont:Location"/>
+            <Class abbreviatedIRI="ma-ont:MediaResource"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#profile"/>
+        <DataProperty abbreviatedIRI="foaf:nick"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StoryTimer"/>
+        <Class IRI="#StoryImage"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commentDate"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commentId"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#commentText"/>
+        <Class IRI="#Comment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locationDescription"/>
+        <Class abbreviatedIRI="ma-ont:Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mediaDescription"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mediaFormat"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mediaSize"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mediaTitle"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mediaURL"/>
+        <Class abbreviatedIRI="ma-ont:MediaResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tagId"/>
+        <Class IRI="#Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tagText"/>
+        <Class IRI="#Tag"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="foaf:age"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="foaf:gender"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="foaf:nick"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="foaf:Agent"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="foaf:Organization"/>
+                <Class abbreviatedIRI="foaf:Person"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#StoryTimer"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commentDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commentId"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#commentText"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locationDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mediaDescription"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mediaFormat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mediaSize"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mediaTitle"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mediaURL"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#profile"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tagId"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tagText"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ma-ont:locationAltitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ma-ont:locationLatitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ma-ont:locationLongitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ma-ont:locationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PostImage</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#commented</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">commentedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:msnChatID</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Messenger chat id</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:msnChatID</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">messengerId</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyRange>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <AbbreviatedIRI>rdfs:Literal</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="foaf:name"/>
+        <IRI>_:genid103</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
